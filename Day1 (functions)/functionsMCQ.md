@@ -130,3 +130,96 @@ C) Please enter a username. and Please enter a username.
 D) Danish just logged in. and sam just logged in.
 
 Ans. B
+
+============================================================================================
+ ----- MEDIUM LEVEL---
+ 
+1. What will the following code output?
+
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet());
+
+A) Hello, undefined!
+B) Hello, !
+C) Throws an error
+D) undefined
+
+Ans A
+-------------------------------------------------------------------
+2. What happens when the following code is executed?
+
+const multiply = function(a, b) {
+    return a * b;
+};
+console.log(multiply(5, 4));
+A) 9
+B) 20
+C) undefined
+D) Throws an error
+
+Ans. B
+-----------------------------------------------------------------------------------------
+3. What will the output be?
+
+function example(x = 10, y = x + 5) {
+    return x + y;
+}
+console.log(example());
+console.log(example(20));
+A) 25, 30
+B) 15, 35
+C) 25, 45
+D) Throws an error
+
+Ans. C
+------------------------------------------------------------------------------------------
+4. Which of the following is correct about the rest operator in functions?
+
+A) It must always be the first parameter.
+B) It creates an object of the remaining arguments passed.
+C) It combines multiple arguments into a single array.
+D) It cannot be used with default parameters.
+
+ Ans. C
+------------------------------------------------------------------------------------------
+5. What is the output of this code?
+
+function outerFunction() {
+    let counter = 10;
+    function innerFunction() {
+        counter += 1;
+        return counter;
+    }
+    return innerFunction;
+}
+const increment = outerFunction();
+console.log(increment());
+console.log(increment());
+A) 10, 10
+B) 11, 12
+C) undefined, undefined
+D) Throws an error
+
+Ans. B
+---------------------------------------------------------------------------------------
+6. -doubt to be clear.> What will be logged to the console?
+
+const user = {
+    name: "Md Danish",
+    getName: function() {
+        return this.name;
+    }
+};
+const getUserName = user.getName;
+console.log(getUserName());
+
+A) "Md Danish"
+B) undefined
+C) Throws an error
+D) "this.name"
+
+Ans. B
+
+7. 
